@@ -1,0 +1,77 @@
+.header {
+    @extend %basePos;
+    background: #fff;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10);
+    &__wrap {
+        width: 100%;
+    }
+    &__center {}
+}
+
+.menuBar {
+    @extend %absolutePos;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    &__item {
+        display: block;
+        width: 28px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: rgba(171, 171, 171, 1);
+        margin: 0 0 4px;
+    }
+}
+
+.welcome {
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $headerWelcomeBack;
+    text-align: center;
+    color: $headerWelcomeText;
+    font-size: (12em / 16);
+    padding: 3.2px 0;
+    &__text {
+        margin: 0;
+    }
+    &__link {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.menu {
+    &__list {
+        @extend %baseFlex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0 0 6px;
+    }
+    &__item {
+        display: inline-block;
+        padding: 8px 27px;
+    }
+    &__link {
+        @extend %nullLink;
+        color: inherit;
+    }
+}
+
+.logo-wrap {
+    @extend %baseFlex;
+    @extend %alignCenter;
+    justify-content: flex-start;
+}
+
+.startBtn-wrap {
+    justify-content: flex-end;
+}
+
+.startBtn {
+    text-transform: uppercase;
+    padding: 5.6px 48px;
+    color: $headerBtn;
+    border-radius: 4px;
+    background: linear-gradient(269deg, rgba(226, 133, 39, 1), rgba(213, 82, 35, 1) 100%);
+    font-size: (14em / 16);
+}
