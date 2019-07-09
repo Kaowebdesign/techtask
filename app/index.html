@@ -10,19 +10,16 @@
     <title>Tech Task</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
   </head>
   <body> 
-    <header class="header">
-      <div class="menuBar"><span class="menuBar__item"></span><span class="menuBar__item"></span><span class="menuBar__item"></span></div>
+    <header class="header"><a class="menuBar" href="#"><span class="menuBar__item"></span><span class="menuBar__item"></span><span class="menuBar__item"></span></a>
       <div class="container">
         <div class="row header__wrap">
-          <div class="col-md center-wrap">
-            <div class="logo"><img class="logo__img" src="/img/logo.svg" alt="Teach Test"></div>
-          </div>
-          <div class="col-md-6">
+          <div class="col d-flex justify-content-start align-items-center"><a class="logo" href="/"><img class="logo__img" src="/img/logo.svg" alt="Teach Test"></a></div>
+          <div class="col-6">
             <div class="header__center">
               <div class="welcome">
                 <p class="welcome__text">Welcome to the new website. The last version is <a href="#" class="welcome__link">here</a></p>
@@ -38,11 +35,27 @@
               </nav>
             </div>
           </div>
-          <div class="col-md center-wrap startBtn-wrap"><a class="startBtn" href="#">GET STARTED</a></div>
+          <div class="col d-flex justify-content-end align-items-center"><a class="startBtn" href="#">GET STARTED</a></div>
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-5">
+            <h1 class="caption">ASK YOU TO DO THIS TASK <br> <span class="caption_bold">IN THE GOOD LEVEL</span></h1>
+            <p class="main__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <button class="btn btn-light mainBtn mainBtn_orange" type="button">GET STARTED</button>
+            <button class="btn btn-outline-light mainBtn" type="button">HOW TO START</button>
+          </div>
+          <div class="col-4 d-flex align-items-end">
+            <div class="barelImg"><img class="barelImg__img" src="/img/barel-golden-02.png" alt="barel golden"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>

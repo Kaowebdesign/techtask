@@ -1,14 +1,14 @@
 header.header
-    .menuBar
+    a(href="#").menuBar
         span.menuBar__item
         span.menuBar__item
         span.menuBar__item
     .container
         .row.header__wrap
-            .col-md.center-wrap
-                .logo
+            .col.d-flex.justify-content-start.align-items-center
+                a(href="/").logo
                     img(src="/img/logo.svg", alt="Teach Test").logo__img
-            .col-md-6
+            .col-6
                 .header__center
                     .welcome
                         p.welcome__text Welcome to the new website. The last version is <a href="#" class="welcome__link">here</a>
@@ -24,5 +24,5 @@ header.header
                                 a(href="#").menu__link News
                             li.menu__item 
                                 a(href="#").menu__link Contacts
-            .col-md.center-wrap.startBtn-wrap
+            .col.d-flex.justify-content-end.align-items-center
                 a(href="#").startBtn GET STARTED
