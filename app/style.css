@@ -81,7 +81,8 @@ body {
     opacity: .8; }
 
 .main {
-  color: #ffffff; }
+  color: #ffffff;
+  padding-bottom: 300px; }
   .main_mTop {
     padding-top: 80px; }
   .main__topCont {
@@ -114,19 +115,15 @@ body {
 
 .prodsCard {
   width: 100%;
-  height: 300px;
+  height: 331px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 6px 9px 0px rgba(165, 94, 0, 0.25);
           box-shadow: 0px 6px 9px 0px rgba(165, 94, 0, 0.25);
-  margin: 0 15px; }
+  margin: 0 15px;
+  padding: 30px 0; }
   .prodsCard_yellow {
     background: -webkit-gradient(linear, left top, left bottom, from(#f3ca22), to(#d87a00));
     background: linear-gradient(180deg, #f3ca22, #d87a00 100%); }
-  .prodsCard_yellBack {
-    background-image: url("/img/barel-golden-02.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom; }
   .prodsCard_orange {
     background: -webkit-gradient(linear, left top, left bottom, from(#e75300), to(#531e00));
     background: linear-gradient(180deg, #e75300, #531e00 100%); }
@@ -136,6 +133,54 @@ body {
   .prodsCard_darkRed {
     background: -webkit-gradient(linear, left top, left bottom, from(#7a0200), to(black));
     background: linear-gradient(180deg, #7a0200, black 100%); }
+  .prodsCard__backImg {
+    z-index: -2; }
+    .prodsCard__backImg_yellow {
+      background-image: url("/img/barel-golden-02.png");
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: 50% 100px; }
+    .prodsCard__backImg_orange {
+      background-image: url("/img/barel-amber-02.png");
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: 50% 100px; }
+    .prodsCard__backImg_red {
+      background-image: url("/img/barel-dark-02.png");
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: 50% 100px; }
+    .prodsCard__backImg_darkRed {
+      background-image: url("/img/barel-verydark-02.png");
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: 50% 100px; }
+  .prodsCard__backGrad {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    z-index: -1; }
+    .prodsCard__backGrad_yellow {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 34, 0)), to(#d87a00));
+      background: linear-gradient(180deg, rgba(243, 202, 34, 0), #d87a00 100%); }
+    .prodsCard__backGrad_orange {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 34, 0)), to(#531e00));
+      background: linear-gradient(180deg, rgba(243, 202, 34, 0), #531e00 100%); }
+    .prodsCard__backGrad_red {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 34, 0)), to(black));
+      background: linear-gradient(180deg, rgba(243, 202, 34, 0), black 100%); }
+    .prodsCard__backGrad_darkRed {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 34, 0)), to(black));
+      background: linear-gradient(180deg, rgba(243, 202, 34, 0), black 100%); }
+  .prodsCard__caption {
+    font-size: 1.25rem; }
+  .prodsCard__description {
+    font-size: 0.875em; }
+  .prodsCard__cost {
+    font-size: 0.75rem;
+    padding: 10px 10px 0;
+    margin: 0; }
 
 .container {
   max-width: 1170px; }
@@ -159,7 +204,7 @@ body {
   position: relative;
   z-index: 1; }
 
-.menuBar {
+.menuBar, .prodsCard__backGrad {
   position: absolute; }
 
 .logo, .menuBar, .startBtn {
@@ -173,5 +218,5 @@ body {
   left: 0;
   right: 0; }
 
-.caption_bold, .caption__duo {
+.caption_bold, .caption__duo, .prodsCard__caption {
   font-family: 'Fredoka One', cursive; }
