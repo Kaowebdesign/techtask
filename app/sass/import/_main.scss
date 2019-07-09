@@ -1,21 +1,65 @@
 .main{
-    // min-height: 530px;
-    @include backImg('/img/background.svg',100%,center top);
     color: $basicWhite;
+    &_mTop{
+        padding-top: 80px;
+    }
+    &__topCont{
+        @include backImg('/img/background.svg',100%,center top);
+    }
+    &__info{
+        padding: 20px 0;
+    }
+    &__description{
+        line-height: 19px;
+    }
 }
 .caption{
     text-transform: uppercase;
     font-weight: 300;
     font-size: (26rem  / 16);
     &_bold{
-        font-family: 'Fredoka One', cursive;
+        @extend %freedokaFont;
         font-size: (36rem / 16);
         text-shadow: 0px 3px 6px #A55E00;
+    }
+    &__duo{
+        @extend %freedokaFont;
+        color: $baseOrange;
+        font-size: (36rem / 16);
     }
 }
 .mainBtn{
     font-size: (14rem / 16);
+    &_padding{
+        padding: 11px 48px;
+    }
     &_orange{
         color: $baseOrange;
+    }
+}
+.prodsCard{
+    @extend %basePos;
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 0px 6px 9px 0px rgba(165, 94, 0, 0.25);
+    margin: 0 15px;
+    &_yellow{
+        background: linear-gradient(180deg, rgba(243, 202, 34, 1), rgba(216, 122, 0, 1) 100%);
+    }
+    &_yellBack{
+        @include backImg('/img/barel-golden-02.png',cover,center bottom);
+    }
+    &_orange{
+        background: linear-gradient(180deg, rgba(231, 83, 0, 1), rgba(83, 30, 0, 1) 100%);
+    }
+    &_red{
+        background: linear-gradient(180deg, rgba(204, 0, 0, 1), rgba(57, 0, 0, 1) 100%);
+    }
+    &_darkRed{
+        background: linear-gradient(180deg, rgba(122, 2, 0, 1), rgba(0, 0, 0, 1) 100%);
+    }
+    &__backImg{
+        @extend %fullAbsolute;
     }
 }

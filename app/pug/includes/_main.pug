@@ -1,13 +1,33 @@
 main.main
-    .container
-        .row
-            .col
-            .col-5
-                h1.caption ASK YOU TO DO THIS TASK <br> <span class="caption_bold">IN THE GOOD LEVEL</span>
-                p.main__description Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                button(type="button" class="btn btn-light").mainBtn.mainBtn_orange GET STARTED
-                button(type="button" class="btn btn-outline-light").mainBtn HOW TO START
-            .col-4.d-flex.align-items-end
-                .barelImg
-                    img(src="/img/barel-golden-02.png", alt="barel golden").barelImg__img
-            .col
+    section.main__topCont.main_mTop
+        .container
+            .row
+                .col
+                .col-5
+                    article.main__info
+                        h1.caption ASK YOU TO DO THIS TASK <br> <span class="caption_bold">IN THE GOOD LEVEL</span>
+                        p.main__description Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        .row
+                            .col.d-flex.justify-content-between
+                                a(href="#" class="btn btn-light").mainBtn.mainBtn_orange.mainBtn_padding GET STARTED
+                                a(href="#" class="btn btn-outline-light").mainBtn.mainBtn_padding HOW TO START
+                .col-4.d-flex.align-items-end.justify-content-center
+                    .barelImg
+                        img(src="/img/barel-golden-02.png", alt="barel golden").barelImg__img
+                .col
+    section.main__prods
+        .container
+            .row
+                .col
+                    h2.caption__duo.text-center Do Very Well Tech Task <br> In Few Simple Steps
+            .row
+                .col.d-flex.justify-content-center.prodsCard.prodsCard_yellow
+                    .prodsCard__backImg.prodsCard_yellBack
+                    .text-center.prodsCard__wrap
+                        h3.prodsCard__caption AAA
+                        p.prodsCard__description Tech Task For You
+                        a(href="#" class="btn btn-light").mainBtn.mainBtn_orange.mainBtn_padding GET STARTED
+                        p.prodsCard__cost Tech Task <span class="prodsCard__price">$00.00</span>
+                .col.d-flex.justify-content-center.prodsCard.prodsCard_orange
+                .col.d-flex.justify-content-center.prodsCard.prodsCard_red
+                .col.d-flex.justify-content-center.prodsCard.prodsCard_darkRed

@@ -61,3 +61,15 @@
 %baseTransition {
     transition: .5s;
 }
+
+%fullAbsolute{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+%freedokaFont{
+    font-family: 'Fredoka One', cursive;
+}

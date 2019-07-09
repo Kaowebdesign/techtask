@@ -81,25 +81,61 @@ body {
     opacity: .8; }
 
 .main {
-  background-image: url("/img/background.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
   color: #ffffff; }
+  .main_mTop {
+    padding-top: 80px; }
+  .main__topCont {
+    background-image: url("/img/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top; }
+  .main__info {
+    padding: 20px 0; }
+  .main__description {
+    line-height: 19px; }
 
 .caption {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.625rem; }
   .caption_bold {
-    font-family: 'Fredoka One', cursive;
     font-size: 2.25rem;
     text-shadow: 0px 3px 6px #A55E00; }
+  .caption__duo {
+    color: #D55223;
+    font-size: 2.25rem; }
 
 .mainBtn {
   font-size: 0.875rem; }
+  .mainBtn_padding {
+    padding: 11px 48px; }
   .mainBtn_orange {
     color: #D55223; }
+
+.prodsCard {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 6px 9px 0px rgba(165, 94, 0, 0.25);
+          box-shadow: 0px 6px 9px 0px rgba(165, 94, 0, 0.25);
+  margin: 0 15px; }
+  .prodsCard_yellow {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3ca22), to(#d87a00));
+    background: linear-gradient(180deg, #f3ca22, #d87a00 100%); }
+  .prodsCard_yellBack {
+    background-image: url("/img/barel-golden-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; }
+  .prodsCard_orange {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e75300), to(#531e00));
+    background: linear-gradient(180deg, #e75300, #531e00 100%); }
+  .prodsCard_red {
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc0000), to(#390000));
+    background: linear-gradient(180deg, #cc0000, #390000 100%); }
+  .prodsCard_darkRed {
+    background: -webkit-gradient(linear, left top, left bottom, from(#7a0200), to(black));
+    background: linear-gradient(180deg, #7a0200, black 100%); }
 
 .container {
   max-width: 1170px; }
@@ -119,7 +155,7 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-.header {
+.header, .prodsCard {
   position: relative;
   z-index: 1; }
 
@@ -129,3 +165,13 @@ body {
 .logo, .menuBar, .startBtn {
   -webkit-transition: .5s;
   transition: .5s; }
+
+.prodsCard__backImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.caption_bold, .caption__duo {
+  font-family: 'Fredoka One', cursive; }
