@@ -1,8 +1,38 @@
 @media only screen and (max-width:1440px) {}
 
-@media only screen and (max-width:1240px) {}
+@media only screen and (max-width:1240px) {
+    .main {
+        &__buttons {
+            margin: 0;
+        }
+        &__topCont {
+            background-position: 50% top;
+        }
+    }
+}
 
-@media only screen and (max-width:1024px) {}
+@media only screen and (max-width:1024px) {
+    .main_mTop {
+        // padding: 10px 0 0;
+    }
+    .main__topCont {
+        min-height: initial;
+    }
+    .prodsCard {
+        max-width: 263px;
+        min-height: 331px;
+        margin: 15px;
+    }
+    .barelImg__img {
+        max-width: 230px;
+    }
+}
+
+@media only screen and (max-width:836px) {
+    .barelImg__img {
+        max-width: 160px;
+    }
+}
 
 @media only screen and (max-width:768px) {}
 

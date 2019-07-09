@@ -2,24 +2,26 @@
     @extend %basePos;
     background: #fff;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10);
+    padding-left: 50px;
     &__wrap {
         width: 100%;
     }
 }
 
-.logo{
+.logo {
     @extend %baseTransition;
-    &:hover{
+    &:hover {
         opacity: .8;
     }
 }
+
 .menuBar {
     @extend %baseTransition;
     @extend %absolutePos;
     top: 50%;
     transform: translateY(-50%);
     left: 14px;
-    &:hover{
+    &:hover {
         opacity: .7;
     }
     &__item {
@@ -65,7 +67,7 @@
         display: block;
         color: inherit;
         padding: 8px 27px;
-        &:hover{
+        &:hover {
             opacity: .7;
             color: #000;
         }
@@ -80,7 +82,4 @@
     border-radius: 4px;
     background: linear-gradient(269deg, rgba(226, 133, 39, 1), rgba(213, 82, 35, 1) 100%);
     font-size: (14em / 16);
-    &:hover{
-        opacity: .8;
-    }
 }
