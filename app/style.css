@@ -149,7 +149,8 @@ body {
 .mainBtn {
   font-size: 0.875rem; }
   .mainBtn_padding {
-    padding: 11px 48px; }
+    padding: 11px 48px;
+    min-width: 191px; }
   .mainBtn_orange {
     color: #D55223; }
 

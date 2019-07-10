@@ -82,6 +82,7 @@
     font-size: (14rem / 16);
     &_padding {
         padding: 11px 48px;
+        min-width: 191px;
     }
     &_orange {
         color: $baseOrange;
