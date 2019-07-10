@@ -10,7 +10,7 @@
     &__topCont {
         @extend %basePos;
         min-height: 535px;
-        @include backImg('/img/background.svg', 100%, 50% bottom);
+        @include backImg('img/background.svg', 100%, 50% bottom);
     }
     &__info {
         padding: 20px 0;
@@ -33,7 +33,7 @@
             width: 200px;
             height: 200px;
             z-index: -1;
-            @include backImg('/img/leaf-04.png', 140%, center);
+            @include backImg('img/leaf-04.png', 140%, center);
         }
         &::before {
             content: "";
@@ -44,7 +44,7 @@
             width: 130px;
             height: 130px;
             z-index: -1;
-            @include backImg('/img/leaf-05.png', 140%, center);
+            @include backImg('img/leaf-05.png', 140%, center);
         }
     }
     &__duoLetters {
@@ -57,7 +57,7 @@
             display: block;
             width: 200px;
             height: 200px;
-            @include backImg('/img/leaf-01.png', 100% 110%, top);
+            @include backImg('img/leaf-01.png', 100% 110%, top);
         }
     }
 }
@@ -121,16 +121,16 @@
         @extend %baseTransition;
         z-index: -2;
         &_yellow {
-            @include backImg('/img/barel-golden-02.png', 75%, 50% 100px);
+            @include backImg('img/barel-golden-02.png', 75%, 50% 100px);
         }
         &_orange {
-            @include backImg('/img/barel-amber-02.png', 75%, 50% 100px);
+            @include backImg('img/barel-amber-02.png', 75%, 50% 100px);
         }
         &_red {
-            @include backImg('/img/barel-dark-02.png', 75%, 50% 100px);
+            @include backImg('img/barel-dark-02.png', 75%, 50% 100px);
         }
         &_darkRed {
-            @include backImg('/img/barel-verydark-02.png', 75%, 50% 100px);
+            @include backImg('img/barel-verydark-02.png', 75%, 50% 100px);
         }
     }
     &__backGrad {
